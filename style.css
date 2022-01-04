@@ -1,0 +1,60 @@
+body {
+  background-color: gainsboro;
+}
+
+body div {
+  height: 300px;
+  width: 800px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 40px;
+  margin: 50px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body div header {
+  color: slategrey;
+  font-size: 25px;
+  height: 10px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+body div main {
+  height: 5px;
+}
+
+body div ul {
+  font-size: 18px;
+  color: gray;
+  height: 20px;
+}
+
+body div ul .label1 {
+  list-style: initial;
+  text-decoration: none;
+  content: icon;
+  color: blue;
+}
+
+body div ul .label2 {
+  color: gray;
+}
+
+body div ul .label3 {
+  color: black;
+}
+
+body div ul .label4 {
+  color: firebrick;
+}
+/*# sourceMappingURL=style.css.map */

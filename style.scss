@@ -1,0 +1,51 @@
+body{
+    background-color: gainsboro;
+    div{
+        height: 300px;
+        width: 800px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 40px;
+        margin: 50px auto;
+        font-family: Arial, Helvetica, sans-serif;
+
+        header{
+            color: slategrey;
+            font-size: 25px;
+            height: 10px;
+            padding-top: 0px;
+            margin-top: 0px;
+        }
+
+        main{
+            height: 5px;
+        }
+
+        ul{
+            font-size: 18px;
+            color: gray;
+            height: 20px;
+            
+            .label1{
+                list-style: initial;
+                text-decoration: none;
+                content: icon;
+                color: blue;
+            }
+            .label2{
+                    color: gray;
+                }
+            
+            .label3{
+                    color: black;
+                }
+            
+            .label4{
+                    color: firebrick;
+                }
+            
+        }
+    }
+}
