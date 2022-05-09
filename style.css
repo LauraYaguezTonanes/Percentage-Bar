@@ -1,71 +1,74 @@
-body {
+body{
   background-color: #f3f3f3;
   padding-top: 3em;
   font-family: Helvetica;
-  font-size: 13px;
+  font-style: italic;
+  font-size: 15px;
+}
+.page-wrap{
+    padding: 2em;
+    background-color: #fff;
+    width: 50%;
+    margin: 0 auto;
 }
 
-.page-wrap {
-  padding: 2em;
-  background-color: #fff;
-  width: 50%;
-  margin: 0 auto;
-}
+/* //The skill bars
 
-h2 {
-  color: black;
-}
+$skill1: #d7edfa;
+$skill2: #c8e7f8;
+$skill3: #b9e0f7;
+$skill4: #a9d9f5;
+$skill5: #9ad3f3; */
 
-.skill-bar-container {
+h2{
+  color: rgb(92, 91, 91);
+  font-style: oblique;
+  font-weight: 800;
+  font-size: 25px;
+}
+.skill-bar-container{
   position: relative;
   width: 100%;
   border-radius: 4px;
   background-color: whitesmoke;
   margin-bottom: 0.5em;
 }
+  .skill-bar{
+    display: block;
+    border-radius: 4px;
+    height: 25px;
+    /* background-color: $skillColor; //#d7edfa */
+  }
+      .level1{ 
+        width: 20%; 
+        background-color: #fad7eb;
+      }
+      .level2 { 
+        width: 40%; 
+        background-color: #f8c8ee
+      }
+      .level3 { 
+        width: 60%; 
+        background-color: #f7b9eb
+      }
+      .level4 { 
+        width: 80%; 
+        background-color: #f5a9e1
+      }
+      .level5 { 
+        width: 100%; 
+        background-color: #f39ae9
+      }
+    .skill-name{
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      color: #333;
 
-.skill-bar-container .skill-bar {
-  display: block;
-  border-radius: 4px;
-  height: 25px;
-}
-
-.skill-bar-container .skill-bar.level1 {
-  width: 20%;
-  background-color: #d7edfa;
-}
-
-.skill-bar-container .skill-bar.level2 {
-  width: 40%;
-  background-color: #c8e7f8;
-}
-
-.skill-bar-container .skill-bar.level3 {
-  width: 60%;
-  background-color: #b9e0f7;
-}
-
-.skill-bar-container .skill-bar.level4 {
-  width: 80%;
-  background-color: #a9d9f5;
-}
-
-.skill-bar-container .skill-bar.level5 {
-  width: 100%;
-  background-color: #9ad3f3;
-}
-
-.skill-bar-container .skill-name {
-  position: absolute;
-  top: 5px;
-  left: 10px;
-  color: #333;
-}
-
-.skill-bar-container .skill-percent {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  color: #999;
-}
-/*# sourceMappingURL=style.css.map */
+    }
+    .skill-percent{
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      color: #999; //#333
+    }
