@@ -1,51 +1,70 @@
 body{
-    background-color: gainsboro;
-    div{
-        height: 300px;
-        width: 800px;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        padding-left: 40px;
-        margin: 50px auto;
-        font-family: Arial, Helvetica, sans-serif;
-
-        header{
-            color: slategrey;
-            font-size: 25px;
-            height: 10px;
-            padding-top: 0px;
-            margin-top: 0px;
-        }
-
-        main{
-            height: 5px;
-        }
-
-        ul{
-            font-size: 18px;
-            color: gray;
-            height: 20px;
-            
-            .label1{
-                list-style: initial;
-                text-decoration: none;
-                content: icon;
-                color: blue;
-            }
-            .label2{
-                    color: gray;
-                }
-            
-            .label3{
-                    color: black;
-                }
-            
-            .label4{
-                    color: firebrick;
-                }
-            
-        }
+    background-color: #f3f3f3;
+    padding-top: 3em;
+    font-family: Helvetica;
+    font-size: 13px;
+  }
+  .page-wrap{
+      padding: 2em;
+      background-color: #fff;
+      width: 50%;
+      margin: 0 auto;
+  }
+  
+  //The skill bars
+  
+  $skill1: #d7edfa;
+  $skill2: #c8e7f8;
+  $skill3: #b9e0f7;
+  $skill4: #a9d9f5;
+  $skill5: #9ad3f3;
+  
+  h2{
+    color: black;
+  }
+  .skill-bar-container{
+    position: relative;
+    width: 100%;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    margin-bottom: 0.5em;
+    .skill-bar{
+      display: block;
+      border-radius: 4px;
+      height: 25px;
+      //background-color: $skillColor; //#d7edfa
+      &.level1 { 
+        width: 20%; 
+        background-color: #d7edfa;
+      }
+      &.level2 { 
+        width: 40%; 
+        background-color: #c8e7f8
+      }
+      &.level3 { 
+        width: 60%; 
+        background-color: #b9e0f7
+      }
+      &.level4 { 
+        width: 80%; 
+        background-color: #a9d9f5
+      }
+      &.level5 { 
+        width: 100%; 
+        background-color: #9ad3f3
+      }
     }
-}
+    .skill-name{
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      color: #333; //#333
+      //font-weight: 600;
+    }
+    .skill-percent{
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      color: #999; //#333
+    }
+  }
